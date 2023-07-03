@@ -15,6 +15,7 @@ spec:
     volumeMounts:
     - name: downward
       mountPath: /etc/downward/
+    resources: {}
   volumes:
   - name: downward
     downwardAPI:

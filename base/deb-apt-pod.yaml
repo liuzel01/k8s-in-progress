@@ -19,6 +19,7 @@ spec:
       mountPath: /etc/apt/apt.conf.d/98proxy
       subPath: 98proxy
       readOnly: true
+    resources: {}
   volumes:
   - name: deb-apt
     configMap:
