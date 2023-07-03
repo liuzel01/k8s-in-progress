@@ -5,21 +5,26 @@
 # 目录结构和作用解释
 
 * README.md: 本文档
+
 * postgres.yaml: 发布一个示例数据库
   * service
   * secret: password为passwd123
   * sts: 底层使用nfs-client
+  
 * redis.yaml: 发布一个示例redis
   * service
   * deploy
+  
 * traefik-role.yaml: traefik所需的account和role
   * ClusterRole
   * ServiceAccount
   * ClusterRoleBinding
+
 * traefik-app.yaml: 发布traefik作为ingress
   * Service: traefik-dashboard
   * Service: traefik-web
   * Deployment
+
 * whoami.yaml: traefik的示例性应用，参见[这里](https://doc.traefik.io/traefik/getting-started/quick-start-with-kubernetes/)
   * Service
   * Ingress
